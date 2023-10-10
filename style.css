@@ -1,0 +1,93 @@
+:root {
+    --pink: #EC268F;
+    --orange: #F37951;
+    --biru: #37898C;
+    --gradient: linear-gradient(80deg, var(--pink), var(--orange), var(--pink));
+}
+
+.btn-pilih {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--pink);
+    font-size: 1.2rem;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+    transition: all .5s linear;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-pilih:hover {
+    transform: scale(1.1);
+    background: var(--orange);
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: whitesmoke;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--pink);
+}
+
+.title1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--biru);
+}
+
+.title2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 0 0.5rem;
+    color: whitesmoke;
+    font-weight: 700;
+    background: var(--gradient);
+}
+
+.footer {
+    background: rgb(243, 240, 240);
+}
+
+footer, h4 {
+    font-size: 1rem;
+}
+
+footer, h4, p {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}

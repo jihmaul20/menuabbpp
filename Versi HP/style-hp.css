@@ -1,0 +1,423 @@
+:root {
+    --pink: #EC268F;
+    --orange: #F37951;
+    --biru: #37898C;
+    --gradient: linear-gradient(80deg, var(--pink), var(--orange), var(--pink));
+}
+
+.section-logo img {
+    width: 100%;
+    animation: updown 4s linear infinite;
+}
+
+@keyframes updown {
+    0%, 100% {
+        transform: translateY(0rem);
+    }
+    50% {
+        transform: translateY(-2.5rem);
+    }
+}
+
+.masuk-web .section-logo img {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    position: center;
+    width: 100%;
+}
+
+.masuk-web .peringatan {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    font-family: helvetica ;
+    font-size: 100%;
+}
+
+.btn-web {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--pink);
+    font-size: 1.2rem;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+    transition: all .5s linear;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-web:hover {
+    transform: scale(1.1);
+    background: var(--orange);
+}
+
+section .box-content .content .peringatan {
+    justify-content: center;
+    font-size: 66%;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(204, 238, 251);
+    text-align: center;
+}
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    position: relative;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: whitesmoke;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--pink);
+}
+
+.title1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--biru);
+}
+
+.title2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 0 0.5rem;
+    color: whitesmoke;
+    font-weight: 700;
+    background: var(--gradient);
+}
+
+section .item img {
+    width: 5px;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+section .item img, h4 {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: larger;
+}
+
+section .item h4 {
+    background-color: rgb(246, 225, 186);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.slider {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+    width: 30px;
+    height: 3px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 180px;
+    height: 100;
+    margin: 0 10px 0 10px;
+    border-radius: 7px;
+    background: #fff;
+    transform-origin: center;
+    transition: transform 0.5s;
+    position: relative;
+    border: 1px solid #555;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 100%;
+    text-align: center;
+}
+
+.slides div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-color: whitesmoke;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+}
+
+.slider img {
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+}
+
+.btn-kepo, .btn-kami {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--biru);
+    font-size: 1.2rem;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+    transition: all .5s linear;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-kepo:hover, .btn-kami:hover {
+    transform: scale(1.1);
+    background: var(--orange);
+}
+
+.whatsapp1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-radius: 5rem;
+    background: rgb(239, 209, 151);
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+    transition: all .5s linear;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.whatsapp1:hover, .whatsapp2:hover{
+    transform: scale(1.1);
+    background: var(--gradient);
+}
+
+.whatsapp2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-radius: 5rem;
+    background: rgb(239, 209, 151);
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+    transition: all .5s linear;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.info-live h2 {
+    text-align: center;
+    background-color: burlywood;
+}
+
+.info-live li p {
+    text-align: justify;
+}
+
+.btn-dokumentasi, .btn-buktiusaha, .btn-live {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 5rem;
+    background: var(--pink);
+    font-size: 1.2rem;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+    transition: all .5s linear;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-dokumentasi:hover, .btn-buktiusaha:hover, .btn-live:hover {
+    transform: scale(1.1);
+    background: var(--biru);
+}
+
+section .dokumentasi img {
+    height: 100%;
+    width: 100%;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.tabel-bukti {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.nama-bukti {
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    padding-top: 0.6rem;
+    padding-right: 1rem;
+}
+
+.bukti-file {
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.review .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 1rem 1rem 1rem;
+    flex-wrap: wrap;
+    border: 3px solid var(--pink);
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(img/abbppstiker.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.review .box-container .box .reviewer{
+    background: white;
+    width: 50%;
+    padding: 1.7rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,.1);
+    text-align: center;
+    border: 5px dashed var(--orange);
+    justify-content: center;
+    min-height:fit-content;
+}
+
+.review .box-container .box .reviewer img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    object-fit: cover;
+}
+
+.review .box-container .box .reviewer h3 {
+    font-size: 1.3rem;
+}
+
+.review .box-container .box .reviewer .medsos {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.review .box-container .box .reviewer .comment {
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.btn-kembali {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.8rem 3rem;
+    border-radius: 5rem;
+    background: var(--biru);
+    font-size: 100%;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+    transition: all .5s linear;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.btn-kembali:hover {
+    transform: scale(1.1);
+    background: var(--gradient);
+}
+
+.footer {
+    background: rgb(243, 240, 240);
+}
+
+footer, h4 {
+    font-size: 1rem;
+}
+
+footer, h4, p {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
