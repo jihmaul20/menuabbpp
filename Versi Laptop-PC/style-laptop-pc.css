@@ -342,6 +342,15 @@ section {
     font-weight: 600;
 }
 
+.info-live h2 {
+    text-align: center;
+    background-color: burlywood;
+}
+
+.info-live li p {
+    text-align: justify;
+}
+
 .btn-dokumentasi, .btn-buktiusaha, .btn-live {
     display: inline-block;
     margin-top: 1rem;
