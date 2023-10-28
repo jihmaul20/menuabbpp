@@ -409,7 +409,8 @@ section .dokumentasi img {
 }
 
 .footer {
-    background: rgb(243, 240, 240);
+    background-color: black;
+    padding-bottom: 0.6rem;
 }
 
 footer, h4 {
